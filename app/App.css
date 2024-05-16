@@ -1,0 +1,143 @@
+
+.hidden {
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+.grayed {
+  opacity:0.5;
+}
+
+.grayed input {
+  pointer-events:none;
+}
+
+
+.componentname {
+  display: none;
+  font-size: .5em;
+  color:gray;
+  float: left;
+}
+
+
+
+#userscorecomponent #wordcount {
+  clear: both;
+}
+
+
+#letterscomponent #letterscontainer {
+  min-height: 220px;
+}
+
+#letterscomponent .letter {
+  font-size: 4em;
+  font-weight: bold;
+  display: inline;
+  text-transform: uppercase;
+  font-family: courier, monospace;
+/*  width: 100px;
+  background-color: pink;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;*/
+}
+
+#letterscomponent #letter0 {
+  position: relative;
+  top:1em;
+}
+
+#letterscomponent #letter1 {
+  position: relative;
+  top:2.25em;
+}
+
+#letterscomponent #letter3 {
+  position: relative;
+  top:2.25em;
+}
+
+#letterscomponent #letter4 {
+  position: relative;
+  top:1em;
+}
+
+
+#letterscomponent #actions button {
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+#letterscomponent #actions #newset {
+  background-color: #B94A20;
+  border-color:#B94A20;
+}
+
+#letterscomponent #actions #newset:hover {
+  background-color: #9B3A16;
+  border-color:#9B3A16;
+}
+
+
+#wordscomponent {
+  width:48%;
+  float:right;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+#wordscomponent ul {
+  list-style-type: none;
+  text-align: left;
+  clear: both;
+}
+
+#inputcomponent {
+  border:0;
+  padding: 10px;
+}
+
+
+#inputcomponent #correctanswer {
+  display:none;
+}
+
+#inputcomponent #incorrectanswer {
+  display:none;
+}
+
+#inputcomponent label {
+  display: none; /* make this accessible */
+}
+
+#inputcomponent #submitbutton {
+  margin-left:2px;
+}
+
+
+
+
+.App {
+  text-align: center;
+  border-radius: 5px;
+}
+
+input {
+  padding:5px;
+}
+
+
+small {
+  color:silver;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
