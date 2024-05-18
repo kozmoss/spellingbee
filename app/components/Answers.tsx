@@ -1,12 +1,12 @@
 "use client"
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 function Answers({answerToggler,answerShow, validPangrams, validAnswers }:any) {
+  const t = useTranslations("Index")
   return (
-    <div className="dropdown w-full bg-base-100 mt-5 "  >
-      <p className="componentname">Answers</p>
-      
-      <button onClick={answerToggler} className='m-5 items-center' title="Ends game">Display answers</button>
+    <div className="dropdown w-full bg-base-100 my-10 overflow-auto"  >      
+      <button onClick={answerToggler} className='m-5 items-center' title="Ends game">{t("displayAnswer")}</button>
 
       <div className={`${answerShow} overflow-y-auto h-60` }>
               <div className='divider mb-0 mt-5'></div>
@@ -18,7 +18,7 @@ function Answers({answerToggler,answerShow, validPangrams, validAnswers }:any) {
           ))}
         </ul>
         <div className='divider m-0'></div>
-        <h3 className='bg-base-100 '>All answers</h3>
+        <h3 className='bg-base-100 '>{t("allanswers")}</h3>
         <div className='divider m-0'></div>
         <ul  tabIndex={0} className="text-left grid grid-cols-4 list-none p-5">
           {validAnswers.map((item:any, i:number) => (
@@ -30,4 +30,4 @@ function Answers({answerToggler,answerShow, validPangrams, validAnswers }:any) {
   );
 }
 
-export default Answers;
+export default React.memo(Answers)

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const Input = ({ grayForm, evaluateWord }:any) => {
   const [guess, setGuess] = useState('');
+  const t = useTranslations("Button")
 
   const handleChange = (event:any) => {
     setGuess(event.target.value);
@@ -14,7 +16,7 @@ const Input = ({ grayForm, evaluateWord }:any) => {
   };
 
   return (
-    <div  id="inputcomponent">
+    <div  id="inputcomponent" className='mt-10'>
       <p className="componentname">Input</p>
 
       <form onSubmit={handleSubmit} className={grayForm}>
@@ -28,7 +30,7 @@ const Input = ({ grayForm, evaluateWord }:any) => {
           onChange={handleChange}
         />
         &nbsp;
-        <input  className='btn btn-warning ' type="submit" value="Submit" id="submitbutton" />
+        <input  className='btn btn-warning ' type="submit" value={t("submit")} id="submitbutton" />
       </form>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-<footer className="footer p-4  text-base-content text-warning bottom-0">
+<footer className="footer p-4 bottom-0 mt-14 text-warning ">
     <aside className='flex justify-between items-center w-full'>
     <a href="https://github.com/kozmoss" target="_blank" rel="noreferrer" className="text-lg border-none w-36 px-10">
         <span>&lt;/&gt;</span> github

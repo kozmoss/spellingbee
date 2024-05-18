@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from './Input';
+import { useTranslations } from 'next-intl';
 
 interface Props {
   evaluateWord: (word: string) => void;
@@ -12,6 +13,7 @@ interface Props {
 }
 
 const Words: React.FC<Props> = ({ evaluateWord, answersShown, grayForm, userPangrams, userAnswers, isCorrect }) => {
+  const t = useTranslations("Index")
   const submitResponse = () => {
     if (isCorrect === "yes") {
       return "Valid word!";
@@ -24,17 +26,19 @@ const Words: React.FC<Props> = ({ evaluateWord, answersShown, grayForm, userPang
     }
   };
 
+  
+
   return (
     <div className='card col-span-1 bg-base-100 shadow-xl w-full'>
+      <div className='h-full'>
       <Input
         answersShown={answersShown}
         evaluateWord={evaluateWord}
         grayForm={grayForm}
       />
       <p>{submitResponse()}&nbsp;</p>
-
-      <p className="componentname">Words</p>
-      <div className='divider'>Your pangrams</div>
+      <div className=''>
+      <div className='divider'>{t("pangramsS")}</div>
       <ul>
         {userPangrams.map((item, i) => (
           <li key={i}>
@@ -42,14 +46,20 @@ const Words: React.FC<Props> = ({ evaluateWord, answersShown, grayForm, userPang
           </li>
         ))}
       </ul>
-      <div className='divider'>Your answers</div>
-      <ul>
+      </div>
+      <div>
+      <div className='divider'>{t("answers")}</div>
+      <ul className='text-left grid grid-cols-4 list-none p-5'>
         {userAnswers.map((item, i) => (
           <li key={i}>
-            {item} <small>{item.length}</small>
+            {item} <small>({item.length})</small>
           </li>
         ))}
       </ul>
+      </div>
+ 
+      </div>
+    
     </div>
   );
 };

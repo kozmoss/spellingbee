@@ -1,5 +1,30 @@
 {
     "Index": {
-      "title": "Merhaba Dünya"
-    }
+      "pangramsS":"Pangramsların",
+      "answers": "Cevapların",
+      "displayAnswer":"Cevapları Göster",
+      "allanswers":"Bütün cevaplar",
+      "pangrams":"Pangrams"
+    },
+    "LocaleSwitcher": {
+      "title": "Spelling Bee Oyununa Hoş Geldin",
+      "label": "Dil Seç",
+      "locale": "{locale, select, tr {Turkish} en {English} other {Unknown}}",
+      "description":"Harfler birden fazla kez kullanılabilir. Yalnızca tekil isimler ve şimdiki zaman fiilleri",
+      "introDescription":"Bu heyecan verici Spelling Bee oyununda amacınız kazanmak için 100 puan toplamaktır. İşte nasıl oynanıyor:",
+      "introInitalTime":"Başlangıç ​​Süresi: 60 saniye ile başlarsınız.",
+      "introPointSystem":"Puan Sistemi: Doğru yazdığınız kelimelerin uzunluğuna göre puan kazanın.",
+      "introTimeBonus":"Süre Bonusu: Her doğru yazım için kalan sürenize 15 saniye eklenecektir.",
+      "introGoodLuck":"En iyi Spelling Bee Şampiyonu olmak için yazım becerilerinizi test edin ve zamana karşı yarışın. İyi şanlar!"
+    },
+    "ScoreTable": {
+     "time":"Zaman",
+     "score":"Puan",
+     "words":"Kelimeler"
+    },"Button": {
+      "shuffle":"Karıştır",
+      "newset":"Yeni Set",
+      "reset":"Sıfırla",
+      "submit": "Gönder"
+     }
   }

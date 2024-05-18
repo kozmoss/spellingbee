@@ -1,5 +1,30 @@
 {
     "Index": {
-      "title": "Hello world!"
-    }
+      "pangrams":"Your Pangrams ",
+      "answers": "Your Answers",
+      "displayAnswer":"Display Answers",
+      "pangramsS":"Your Pangrams",
+      "allanswers":"All Answers"
+    },
+    "LocaleSwitcher": {
+      "title": "Welcome to Spelling Bee Challenge!",
+      "label": "Select Language",
+      "locale": "{locale, select, tr {Turkish} en {English} other {Unknown}}",
+      "description":"Letters can be used more than once. Only singular nouns and present tense verbs are allowed.",
+      "introDescription":"In this exciting spelling game, your goal is to score 100 points to win. Here’s how it works:",
+      "introInitalTime":"Initial Time: You start with 60 seconds.",
+      "introPointSystem":"Points System: Earn points based on the length of the words you spell correctly.",
+      "introTimeBonus":"Time Bonus: For every correct spelling, 15 seconds will be added to your remaining time.",
+      "introGoodLuck":"Test your spelling skills and race against the clock to become the ultimate Spelling Bee Champion. Good luck!"
+    }, "ScoreTable": {
+      "time":"Time",
+      "score":"Score",
+      "words":"Words"
+     },
+     "Button": {
+      "shuffle":"Shuffle",
+      "newset":"New Set",
+      "reset":"Reset Game",
+      "submit":"Submit"
+     }
   }
