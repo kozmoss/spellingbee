@@ -62,8 +62,7 @@ function App() {
   const [isConfettiActive, setConfettiActive] = useState(false);
   const timerIdRef = useRef(null);
   const lang = useLocale();
-  console.log(lang)
-
+ 
   function shuffleLetters() {
     let theLetters = [...state.validLetters];
     for (let i = theLetters.length - 1; i > 0; i--) {
@@ -145,16 +144,13 @@ function App() {
 
 
   function evaluateWord(word: any) {
-    console.log(word + " submitted");
 
     let currentList = state.userAnswers;
     let currentPangram = state.userPangrams;
 
     if (state.userAnswers.includes(word)) {
-      console.log("word already guessed");
       setState({ ...state, isCorrect: "alreadyguessed" });
     } else if (state.validPangrams.includes(word)) {
-      console.log("pangram!");
       currentPangram.push(word);
       currentPangram.sort();
       setState({
@@ -165,14 +161,12 @@ function App() {
       setTime((prevTime) => prevTime + 15);
       scoreAnswers();
     } else if (state.validAnswers.includes(word)) {
-      console.log("word is accepted");
       currentList.push(word);
       currentList.sort();
       setState({ ...state, userAnswers: currentList, isCorrect: "yes" });
       setTime((prevTime) => prevTime + 15);
       scoreAnswers();
     } else {
-      console.log("word is rejected");
       setState({ ...state, userPangrams: currentPangram, isCorrect: "no" });
     }
   }
