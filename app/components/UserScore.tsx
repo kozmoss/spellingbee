@@ -14,12 +14,12 @@ function UserScore({userScore,userWordCount, validPangrams, getValidScores, vali
        <div className="stat w-48">
     <div className="stat-title">{t("score")}</div>
     <div className="stat-value">{userScore}</div>
-    <div className="stat-desc">(high score: {Math.round(getValidScores(validAnswers, validPangrams) / 4)} points)</div>
+    <div className="stat-desc"></div>
   </div>
-  <div className="stat">
+  <div className="stat w-48">
     <div className="stat-title">{t("words")}</div>
     <div className="stat-value"> {userWordCount}</div>
-    <div className="stat-desc">(out of a possible {validWordCount} words)</div>
+    <div className="stat-desc"></div>
   </div>
     </div>
     </div>

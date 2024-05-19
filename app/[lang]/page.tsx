@@ -9,6 +9,7 @@ import Words from "../components/Words";
 import Answers from "../components/Answers";
 import Footer from "../components/Footer";
 import Confetti from "../components/Confetti";
+import { useLocale } from "next-intl";
 
 interface WordSet {
   validLetters: string[];
@@ -60,6 +61,8 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   const [isConfettiActive, setConfettiActive] = useState(false);
   const timerIdRef = useRef(null);
+  const lang = useLocale();
+  console.log(lang)
 
   function shuffleLetters() {
     let theLetters = [...state.validLetters];
@@ -75,7 +78,7 @@ function App() {
 
 
   function resetGame() {
-    import("../data/jumble5_hard.json").then(
+    import(`../data/${lang}.json`).then(
       (result: { wordSets: WordSet[] }) => {
         const randNum = Math.floor(
           Math.random() * (result.wordSets.length - 1),
@@ -204,7 +207,7 @@ function App() {
   };
 
   function newSet() {
-    import("../data/jumble5_hard.json").then(
+    import(`../data/${lang}.json`).then(
       (result: { wordSets: WordSet[] }) => {
         const randNum = Math.floor(
           Math.random() * (result.wordSets.length - 1),
@@ -236,7 +239,7 @@ function App() {
   }
 
   useEffect(() => {
-    import("../data/jumble5_hard.json").then(
+    import(`../data/${lang}.json`).then(
       (result: { wordSets: WordSet[] }) => {
         const randNum = Math.floor(
           Math.random() * (result.wordSets.length - 1),
@@ -265,7 +268,7 @@ function App() {
     answers.forEach(function (word) {
       score = score + word.length;
     });
-    pangrams.forEach(function (word) {
+    pangrams?.forEach(function (word) {
       score = score + 10 + word.length;
     });
     return score;
@@ -282,7 +285,7 @@ function App() {
           validAnswers={state.validAnswers}
           validPangrams={state.validPangrams}
           validWordCount={
-            state.validAnswers.length + state.validPangrams.length
+            state.validAnswers.length + state.validPangrams?.length
           }
           getValidScores={getValidScores}
         />

@@ -13,7 +13,7 @@ function Answers({answerToggler,answerShow, validPangrams, validAnswers }:any) {
         <h3 className=''>Pangrams</h3>
         <div className='divider m-0'></div>
         <ul  tabIndex={0} className="text-left grid grid-cols-5 list-none p-5" id="pangramslist">
-          {validPangrams.map((item:any, i:number) => (
+          {validPangrams?.map((item:any, i:number) => (
             <li key={i}><a href={"https://www.merriam-webster.com/dictionary/" + item} target="_blank">{item}</a></li>
           ))}
         </ul>

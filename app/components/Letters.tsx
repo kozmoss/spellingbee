@@ -7,7 +7,7 @@ function Letters({validLetters, newSet, shuffleTheLetters, resetGame}: {validLet
   return (
     <div className="card bg-base-100 shadow-xl col-span-1 w-full" id="letterscomponent">
       <p className="componentname">Letters</p>
-      <div id="letterscontainer">
+      <div id="letterscontainer" className='align-center justify-center flex w-full'>
         {validLetters.map((item:any, i:number) => (
           <div key={i} className="letter" id={"letter" + i}>{item}</div>
         ))}

@@ -1,0 +1,730 @@
+{
+    "description": "",
+    "wordSets": [
+        {
+            "validLetters": [
+                "a",
+                "k",
+                "ş",
+                "e",
+                "r",
+                "t",
+                "m"
+            ],
+            "validAnswers": [
+                "market",
+                "tekşer",
+                "karter",
+                "kemer",
+                "termak",
+                "ayrı",
+                "doğru",
+                "açık"
+            ]
+        },
+        {
+            "validLetters": [
+                "l",
+                "e",
+                "m",
+                "a",
+                "n",
+                "i",
+                "k"
+            ],
+            "validAnswers": [
+                "klima",
+                "milan",
+                "ilken",
+                "malik",
+                "kalim"
+            ]
+        },
+        {
+            "validLetters": [
+                "y",
+                "o",
+                "k",
+                "u",
+                "l",
+                "a",
+                "m"
+            ],
+            "validAnswers": [
+                "kumyol",
+                "kaymol",
+                "okumal",
+                "lamuko"
+            ]
+        },
+        {
+            "validLetters": [
+                "s",
+                "e",
+                "r",
+                "p",
+                "a",
+                "k",
+                "i"
+            ],
+            "validAnswers": [
+                "ispark",
+                "parkis",
+                "kasper",
+                "sparki"
+            ]
+        },
+        {
+            "validLetters": [
+                "d",
+                "e",
+                "n",
+                "i",
+                "z",
+                "a",
+                "r"
+            ],
+            "validAnswers": [
+                "deniz",
+                "rende",
+                "redik",
+                "nediz"
+            ]
+        },
+        {
+            "validLetters": [
+                "ç",
+                "e",
+                "k",
+                "i",
+                "m",
+                "s",
+                "ı"
+            ],
+            "validAnswers": [
+                "çekim",
+                "kesim",
+                "içmek"
+            ]
+        },
+        {
+            "validLetters": [
+                "a",
+                "r",
+                "t",
+                "u",
+                "k",
+                "o",
+                "n"
+            ],
+            "validAnswers": [
+                "kontur",
+                "turna",
+                "tornak"
+            ]
+        },
+        {
+            "validLetters": [
+                "b",
+                "o",
+                "s",
+                "a",
+                "n",
+                "k",
+                "l"
+            ],
+            "validAnswers": [
+                "bankos",
+                "kansol",
+                "salbon",
+                "bonsa"
+            ]
+        },
+        {
+            "validLetters": [
+                "m",
+                "e",
+                "l",
+                "a",
+                "n",
+                "i",
+                "s"
+            ],
+            "validAnswers": [
+                "milan",
+                "silme",
+                "liman",
+                "melis"
+            ]
+        },
+        {
+            "validLetters": [
+                "f",
+                "i",
+                "l",
+                "m",
+                "a",
+                "s",
+                "t"
+            ],
+            "validAnswers": [
+                "iflas",
+                "mislat",
+                "talim"
+            ]
+        },
+        {
+            "validLetters": [
+                "g",
+                "a",
+                "m",
+                "z",
+                "e",
+                "r",
+                "ı"
+            ],
+            "validAnswers": [
+                "girzma",
+                "zirem"
+            ]
+        },
+        {
+            "validLetters": [
+                "h",
+                "e",
+                "l",
+                "i",
+                "s",
+                "a",
+                "m"
+            ],
+            "validAnswers": [
+                "hasim",
+                "melih",
+                "samih",
+                "sile"
+            ]
+        },
+        {
+            "validLetters": [
+                "n",
+                "o",
+                "p",
+                "e",
+                "r",
+                "a",
+                "l"
+            ],
+            "validAnswers": [
+                "panel",
+                "lenor",
+                "renol",
+                "nare"
+            ]
+        },
+        {
+            "validLetters": [
+                "g",
+                "e",
+                "r",
+                "m",
+                "a",
+                "n",
+                "i"
+            ],
+            "validAnswers": [
+                "mergin",
+                "anergi",
+                "gerani"
+            ]
+        },
+        {
+            "validLetters": [
+                "s",
+                "o",
+                "k",
+                "r",
+                "e",
+                "t",
+                "i"
+            ],
+            "validAnswers": [
+                "soket",
+                "iskret",
+                "kesir"
+            ]
+        },
+        {
+            "validLetters": [
+                "m",
+                "a",
+                "r",
+                "t",
+                "i",
+                "n",
+                "e"
+            ],
+            "validAnswers": [
+                "martin",
+                "mertan",
+                "retina"
+            ]
+        },
+        {
+            "validLetters": [
+                "c",
+                "e",
+                "s",
+                "a",
+                "r",
+                "t",
+                "i"
+            ],
+            "validAnswers": [
+                "cetris",
+                "aciret",
+                "cesti"
+            ]
+        },
+        {
+            "validLetters": [
+                "u",
+                "l",
+                "e",
+                "r",
+                "a",
+                "t",
+                "k"
+            ],
+            "validAnswers": [
+                "turkal",
+                "kartel",
+                "latür"
+            ]
+        },
+            {
+              "validPangram": ["ayrılmak"],
+              "validAnswers": [
+                "akıl",
+                "arama",
+                "ayrılmak",
+                "karar",
+                "kaymak",
+                "yakmak",
+                "yarım",
+                "kalkmak",
+                "rakam",
+                "kararlık",
+                "akıllı",
+                "yayılma",
+                "ayrım"
+              ],
+              "middleLetter": "a",
+              "validLetters": ["k", "l", "r", "ı", "m", "a", "y"]
+            },
+            {
+              "validPangram": ["çalışmak"],
+              "validAnswers": [
+                "açık",
+                "açmak",
+                "akıl",
+                "alış",
+                "alkış",
+                "aşçı",
+                "çalışmak",
+                "çıkmak",
+                "maşa",
+                "kalkmak",
+                "akıllık",
+                "çalışma",
+                "alışılmış",
+                "akıllı",
+                "çıkmak"
+              ],
+              "middleLetter": "a",
+              "validLetters": ["k", "m", "l", "a", "ş", "ı", "ç"]
+            },
+            {
+              "validPangram": ["rastlamak"],
+              "validAnswers": [
+                "arama",
+                "asmak",
+                "atmak",
+                "karar",
+                "masal",
+                "rastlamak",
+                "salata",
+                "salmak",
+                "tarla",
+                "karamsar",
+                "saat",
+                "kalkmak",
+                "rakam",
+                "atlatma",
+                "artmak",
+                "atlamak"
+              ],
+              "middleLetter": "a",
+              "validLetters": ["k", "a", "m", "t", "s", "r", "l"]
+            },
+            {
+              "validPangram": ["derinlik"],
+              "validAnswers": [
+                "deli",
+                "erkek",
+                "iller",
+                "inek",
+                "kedi",
+                "keklik",
+                "kendi",
+                "kredi",
+                "lider",
+                "nedir",
+                "neden",
+                "renk",
+                "ekinlik",
+                "renkli",
+                "derinlik",
+                "liderlik"
+              ],
+              "middleLetter": "e",
+              "validLetters": ["e", "d", "l", "r", "i", "n", "k"]
+            },
+            {
+              "validPangram": ["derinlik"],
+              "validAnswers": [
+                "deli",
+                "iller",
+                "inek",
+                "kedi",
+                "keklik",
+                "kendi",
+                "kredi",
+                "lider",
+                "nedir",
+                "renkli",
+                "ekinlik",
+                "renkli",
+                "derinlik",
+                "liderlik",
+                "derin"
+              ],
+              "middleLetter": "i",
+              "validLetters": ["l", "d", "k", "i", "n", "e", "r"]
+            },
+            {
+              "validPangram": ["arkadaşlık"],
+              "validAnswers": [
+                "akıl",
+                "alış",
+                "alkış",
+                "dışarı",
+                "karar",
+                "karşı",
+                "şarkı",
+                "akıllık",
+                "arkadaşlık",
+                "kararlılık",
+                "akıllı",
+                "arkadaş",
+                "karışık"
+              ],
+              "middleLetter": "a",
+              "validLetters": ["d", "l", "k", "ş", "a", "r", "ı"]
+            },
+            {
+              "validPangram": ["karşılaştır"],
+              "validAnswers": [
+                "akıl",
+                "alış",
+                "alkış",
+                "karar",
+                "karışık",
+                "karşı",
+                "katkı",
+                "kıta",
+                "şarkı",
+                "tarla",
+                "karşılaştır",
+                "kararlılık",
+                "akıllı",
+                "altlık",
+                "karışık"
+              ],
+              "middleLetter": "a",
+              "validLetters": ["r", "l", "k", "ı", "t", "ş", "a"]
+            },
+            {
+              "validPangram": ["eğitilmek"],
+              "validAnswers": [
+                "eğitim",
+                "ekmek",
+                "keklik",
+                "melek",
+                "meltem",
+                "temel",
+                "eklemek",
+                "elit",
+                "kelime",
+                "eğitilmek",
+                "elemek",
+                "ellemek",
+                "millet",
+                "temelli"
+              ],
+              "middleLetter": "e",
+              "validLetters": ["k", "l", "i", "t", "e", "m", "ğ"]
+            },
+            {
+              "validPangram": ["izlenmek"],
+              "validAnswers": [
+                "ekmek",
+                "inek",
+                "keklik",
+                "melek",
+                "eklemek",
+                "inmek",
+                "kelime",
+                "ekinlik",
+                "izlenmek",
+                "elemek",
+                "ellemek",
+                "ezilmek",
+                "izlemek"
+              ],
+              "middleLetter": "e",
+              "validLetters": ["e", "m", "z", "k", "i", "n", "l"]
+            },
+            {
+              "validPangram": ["izlenmek"],
+              "validAnswers": [
+                "ekmek",
+                "inek",
+                "keklik",
+                "melek",
+                "eklemek",
+                "inmek",
+                "kelime",
+                "ekinlik",
+                "izlenmek",
+                "elemek",
+                "ellemek",
+                "ezilmek",
+                "ikizlik",
+                "izlemek"
+              ],
+              "middleLetter": "k",
+              "validLetters": ["z", "l", "n", "i", "m", "e", "k"]
+            },{
+                "validPangram": ["ayrılmak"],
+                "validAnswers": [
+                  "akıl",
+                  "arama",
+                  "karar",
+                  "kaymak",
+                  "yakmak",
+                  "yarım",
+                  "kalkmak",
+                  "rakam",
+                  "kararlık",
+                  "akıllı",
+                  "yayılma",
+                  "ayrım"
+                ],
+                "middleLetter": "a",
+                "validLetters": ["k", "l", "r", "ı", "m", "a", "y"]
+              },
+              {
+                "validPangram": ["çalışmak"],
+                "validAnswers": [
+                  "açık",
+                  "açmak",
+                  "alış",
+                  "alkış",
+                  "aşçı",
+                  "çıkmak",
+                  "maşa",
+                  "akıllık",
+                  "çalışma",
+                  "alışılmış"
+                ],
+                "middleLetter": "a",
+                "validLetters": ["k", "m", "l", "a", "ş", "ı", "ç"]
+              },
+              {
+                "validPangram": ["rastlamak"],
+                "validAnswers": [
+                  "asmak",
+                  "atmak",
+                  "masal",
+                  "salata",
+                  "salmak",
+                  "tarla",
+                  "karamsar",
+                  "saat",
+                  "atlatma",
+                  "artmak",
+                  "atlamak"
+                ],
+                "middleLetter": "a",
+                "validLetters": ["k", "a", "m", "t", "s", "r", "l"]
+              },
+              {
+                "validPangram": ["derinlik"],
+                "validAnswers": [
+                  "deli",
+                  "erkek",
+                  "iller",
+                  "inek",
+                  "kedi",
+                  "keklik",
+                  "kendi",
+                  "kredi",
+                  "lider",
+                  "nedir",
+                  "neden",
+                  "renk",
+                  "ekinlik",
+                  "renkli",
+                  "liderlik"
+                ],
+                "middleLetter": "e",
+                "validLetters": ["e", "d", "l", "r", "i", "n", "k"]
+              },
+              {
+                "validPangram": ["derinlik"],
+                "validAnswers": [
+                  "derin"
+                ],
+                "middleLetter": "i",
+                "validLetters": ["l", "d", "k", "i", "n", "e", "r"]
+              },
+              {
+                "validPangram": ["arkadaşlık"],
+                "validAnswers": [
+                  "dışarı",
+                  "karşı",
+                  "şarkı",
+                  "arkadaşlık",
+                  "arkadaş",
+                  "karışık"
+                ],
+                "middleLetter": "a",
+                "validLetters": ["d", "l", "k", "ş", "a", "r", "ı"]
+              },
+              {
+                "validPangram": ["karşılaştır"],
+                "validAnswers": [
+                  "katkı",
+                  "kıta",
+                  "altlık"
+                ],
+                "middleLetter": "a",
+                "validLetters": ["r", "l", "k", "ı", "t", "ş", "a"]
+              },
+              {
+                "validPangram": ["eğitilmek"],
+                "validAnswers": [
+                  "eğitim",
+                  "meltem",
+                  "temel",
+                  "eklemek",
+                  "elit",
+                  "millet",
+                  "temelli"
+                ],
+                "middleLetter": "e",
+                "validLetters": ["k", "l", "i", "t", "e", "m", "ğ"]
+              },
+              {
+                "validPangram": ["izlenmek"],
+                "validAnswers": [
+                  "inmek",
+                  "ezilmek",
+                  "izlemek"
+                ],
+                "middleLetter": "e",
+                "validLetters": ["e", "m", "z", "k", "i", "n", "l"]
+              },
+              {
+                "validPangram": ["izlenmek"],
+                "validAnswers": [
+                  "ikizlik"
+                ],
+                "middleLetter": "k",
+                "validLetters": ["z", "l", "n", "i", "m", "e", "k"]
+              },
+              {
+                "validPangram": ["öğrenmek"],
+                "validAnswers": [
+                  "görmek",
+                  "önem",
+                  "ergen",
+                  "neon",
+                  "görün",
+                  "örnek",
+                  "görül",
+                  "meğer",
+                  "gören",
+                  "görünmek",
+                  "örülmek",
+                  "mergen",
+                  "örgen"
+                ],
+                "middleLetter": "e",
+                "validLetters": ["e", "g", "r", "n", "m", "k", "ö"]
+              },
+              {
+                "validPangram": ["düşünmek"],
+                "validAnswers": [
+                  "düş",
+                  "üşümek",
+                  "düşmek",
+                  "düşün",
+                  "düşünü",
+                  "düşkünü",
+                  "üşme",
+                  "düşkün",
+                  "düşü"
+                ],
+                "middleLetter": "ü",
+                "validLetters": ["d", "ü", "ş", "n", "k", "m", "e"]
+              },
+              {
+                "validPangram": ["başarı"],
+                "validAnswers": [
+                  "baş",
+                  "ışık",
+                  "bağır",
+                  "aşır",
+                  "aşırı",
+                  "arı",
+                  "aş",
+                  "ışır"
+                ],
+                "middleLetter": "ı",
+                "validLetters": ["b", "a", "ş", "ı", "r", "k", "i"]
+              },
+              {
+                "validPangram": ["yaklaşmak"],
+                "validAnswers": [
+                  "yakmak",
+                  "akmak",
+                  "aşmak",
+                  "şaka",
+                  "kalmak",
+                  "makas",
+                  "lamak",
+                  "aşkla",
+                  "şakal",
+                  "kaçmak",
+                  "lağmak",
+                  "alak",
+                  "malak"
+                ],
+                "middleLetter": "a",
+                "validLetters": ["y", "a", "k", "l", "m", "ş"]
+              }
+          
+    ]
+}
