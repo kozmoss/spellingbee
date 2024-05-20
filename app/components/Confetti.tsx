@@ -3,11 +3,12 @@ const SHAPES = ["square", "triangle"];
 const COLOR_DIGIT = "ABCDEF1234567890";
 
 const Confetti = ({isConfettiActive}: {isConfettiActive: boolean}) => {
-  const containerRef = useRef(null);
+  const containerRef = useRef<any>(null);
   useEffect(() => {
     if (isConfettiActive) {
       generateConfetti();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isConfettiActive]);
 
   const generateRandomColor = () => {
