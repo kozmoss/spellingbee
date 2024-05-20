@@ -4,11 +4,10 @@ import { locales } from "@/config";
 import LocaleSwitcherSelect from "./LocaleSwicther";
 import { useLocale, useTranslations } from "next-intl";
 
-function GameIntro({ resetGame, score, time }: any) {
+function GameIntro({ resetGame, score, time }: {time:number, score:number, resetGame:Function}) {
   const locale = useLocale();
   const [showLanguageModal, setShowLanguageModal] = useState(true);
   const t = useTranslations("LocaleSwitcher");
-
   return (
     <div className="flex flex-col items-center justify-center  text-white">
       {(showLanguageModal || time == 0) && (

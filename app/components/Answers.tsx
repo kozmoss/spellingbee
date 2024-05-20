@@ -2,7 +2,14 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 
-function Answers({answerToggler,answerShow, validPangrams, validAnswers }:any) {
+interface AnswersProps {
+  answerToggler: () => void;
+  answerShow: string;
+  validPangrams: string[];
+  validAnswers: string[];
+}
+
+function Answers({answerToggler,answerShow, validPangrams, validAnswers }: AnswersProps) {
   const t = useTranslations("Index")
   return (
     <div className="dropdown w-full bg-base-100 my-10 overflow-auto"  >      

@@ -12,31 +12,15 @@ interface Props {
   isCorrect:any
 }
 
-const Words: React.FC<Props> = ({ evaluateWord, answersShown, grayForm, userPangrams, userAnswers, isCorrect }) => {
+const Words: React.FC<Props> = ({ evaluateWord, grayForm, userPangrams, userAnswers, isCorrect }) => {
   const t = useTranslations("Index")
-  const submitResponse = () => {
-    if (isCorrect === "yes") {
-      return "Valid word!";
-    } else if (isCorrect === undefined ) {
-      return " ";
-    } else if (isCorrect === "pangram") {
-      return "Pangram!";
-    } else {
-      return "Not a valid word";
-    }
-  };
-
-  
-
   return (
     <div className='card col-span-1 bg-base-100 shadow-xl w-full'>
       <div className='h-full'>
       <Input
-        answersShown={answersShown}
         evaluateWord={evaluateWord}
         grayForm={grayForm}
       />
-      <p>{submitResponse()}&nbsp;</p>
       <div className=''>
       <div className='divider'>{t("pangramsS")}</div>
       <ul>
@@ -64,4 +48,4 @@ const Words: React.FC<Props> = ({ evaluateWord, answersShown, grayForm, userPang
   );
 };
 
-export default Words;
+export default React.memo(Words)

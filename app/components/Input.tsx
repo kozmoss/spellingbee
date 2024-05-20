@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
-const Input = ({ grayForm, evaluateWord }:any) => {
+const Input = ({ grayForm, evaluateWord }:{grayForm:string, evaluateWord: Function}) => {
   const [guess, setGuess] = useState('');
   const t = useTranslations("Button")
-
   const handleChange = (event:any) => {
     setGuess(event.target.value);
   };
@@ -30,10 +29,10 @@ const Input = ({ grayForm, evaluateWord }:any) => {
           onChange={handleChange}
         />
         &nbsp;
-        <input  className='btn btn-warning ' type="submit" value={t("submit")} id="submitbutton" />
+        <input  className='btn btn-warning sm:mt-5  md:mt-5' type="submit" value={t("submit")} id="submitbutton" />
       </form>
     </div>
   );
 }
 
-export default Input;
+export default React.memo(Input)

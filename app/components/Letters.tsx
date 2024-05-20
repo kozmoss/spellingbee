@@ -2,7 +2,14 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 
-function Letters({validLetters, newSet, shuffleTheLetters, resetGame}: {validLetters: any, newSet:any, shuffleTheLetters:any, resetGame:any}) {
+interface LettersProps {
+  validLetters: string[];
+  newSet: () => void;
+  shuffleTheLetters: () => void;
+  resetGame: () => void;
+}
+
+function Letters({validLetters, newSet, shuffleTheLetters, resetGame}: LettersProps) {
   const t = useTranslations("Button")
   return (
     <div className="card bg-base-100 shadow-xl col-span-1 w-full" id="letterscomponent">
@@ -14,12 +21,12 @@ function Letters({validLetters, newSet, shuffleTheLetters, resetGame}: {validLet
       </div>
       <p><small><em>Letters can be used more than once<br />Singular nouns &amp; present tense verbs only</em></small></p>
       <div className='w-full flex flex-col md:flex-row justify-center gap-3 m-5'>
-        <button className='btn  btn-outline' id="shuffle"  onClick={shuffleTheLetters}>{t("shuffle")}</button>
+        <button className='btn  btn-outline' id="shuffle" onClick={shuffleTheLetters}>{t("shuffle")}</button>
         <button className='btn  btn-outline' id="newset" onClick={newSet}>{t("newset")}</button>
-        <button className='btn  btn-outline' id="newset" onClick={resetGame}>{t("reset")}</button>
+        <button className='btn  btn-outline'  onClick={resetGame}>{t("reset")}</button>
       </div>
     </div>
   );
 }
 
-export default Letters;
+export default React.memo(Letters)

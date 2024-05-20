@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import "../App.css";
 import GameIntro from "../components/GameIntro";
 import Header from "../components/Headers";
@@ -60,10 +62,11 @@ function App() {
   const [time, setTime] = useState(60);
   const [isActive, setIsActive] = useState(false);
   const [isConfettiActive, setConfettiActive] = useState(false);
-  const timerIdRef = useRef(null);
+  const timerIdRef = useRef<any>(null);
   const lang = useLocale();
+  const router = useRouter();
  
-  function shuffleLetters() {
+  const shuffleLetters = useCallback(() => {
     let theLetters = [...state.validLetters];
     for (let i = theLetters.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -73,10 +76,10 @@ function App() {
       ...state,
       validLetters: theLetters,
     });
-  }
+  }, [state])
 
 
-  function resetGame() {
+  const resetGame = useCallback(() => {
     import(`../data/${lang}.json`).then(
       (result: { wordSets: WordSet[] }) => {
         const randNum = Math.floor(
@@ -113,7 +116,7 @@ function App() {
     setIsActive(true);
     setConfettiActive(false);
     startTimer();
-  }
+  },[])
 
 
     function scoreAnswers() {
@@ -138,19 +141,26 @@ function App() {
       setConfettiActive(true);
       setTimeout(() => {
         setConfettiActive(false);
-      }, 4000);
+      }, 1000); 
+     setTimeout(() =>  window.location.reload(), 3000)
+    
     }
+     
+ 
   }, [state.userScore]);
 
 
-  function evaluateWord(word: any) {
+
+
+
+  const evaluateWord = useCallback((word: any) => {
 
     let currentList = state.userAnswers;
     let currentPangram = state.userPangrams;
 
     if (state.userAnswers.includes(word)) {
       setState({ ...state, isCorrect: "alreadyguessed" });
-    } else if (state.validPangrams.includes(word)) {
+    } else if (state.validPangrams?.includes(word)) {
       currentPangram.push(word);
       currentPangram.sort();
       setState({
@@ -169,11 +179,10 @@ function App() {
     } else {
       setState({ ...state, userPangrams: currentPangram, isCorrect: "no" });
     }
-  }
+  },[state])
 
-  function answerToggler() {
+  const answerToggler = () => {
     let css = state.answerShow === "hidden" ? "show" : "hidden";
-    showAnswersEndGame();
     setState({
       ...state,
       answerShow: css,
@@ -225,13 +234,6 @@ function App() {
     );
   }
 
-  function showAnswersEndGame() {
-    setState({
-      ...state,
-      grayForm: "grayed",
-    });
-  }
-
   useEffect(() => {
     import(`../data/${lang}.json`).then(
       (result: { wordSets: WordSet[] }) => {
@@ -257,16 +259,7 @@ function App() {
     );
   }, []);
 
-  function getValidScores(answers: string[], pangrams: string[]) {
-    let score = 0;
-    answers.forEach(function (word) {
-      score = score + word.length;
-    });
-    pangrams?.forEach(function (word) {
-      score = score + 10 + word.length;
-    });
-    return score;
-  }
+
 
   return (
     <div className="App h-auto flex flex-col bg-base-300 justify-between">
@@ -276,12 +269,6 @@ function App() {
           userScore={state.userScore}
           time={time}
           userWordCount={state.userAnswers.length + state.userPangrams.length}
-          validAnswers={state.validAnswers}
-          validPangrams={state.validPangrams}
-          validWordCount={
-            state.validAnswers.length + state.validPangrams?.length
-          }
-          getValidScores={getValidScores}
         />
 
         <div className="grid grid-cols-2 gap-5">
@@ -307,7 +294,6 @@ function App() {
             validAnswers={state.validAnswers}
             answerShow={state.answerShow}
             answerToggler={answerToggler}
-            showAnswersEndGame={showAnswersEndGame}
           />
         </div>
 

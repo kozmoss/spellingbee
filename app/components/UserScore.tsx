@@ -2,7 +2,13 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 
-function UserScore({userScore,userWordCount, validPangrams, getValidScores, validAnswers, validWordCount, time}:any) {
+interface UserScoreProps {
+  userScore: number;
+  userWordCount: number;
+  time: number;
+}
+
+function UserScore({userScore,userWordCount,time}:UserScoreProps) {
   const t = useTranslations("ScoreTable")
   return (
     <div className='m-5'>
